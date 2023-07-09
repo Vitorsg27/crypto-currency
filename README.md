@@ -30,7 +30,7 @@ npm install
 4. Start the development server:
 
 ```sh
-npx start expo
+npm start
 ```
 
 5. Follow the instructions in the terminal to launch the app on an emulator, simulator, or physical device.
