@@ -30,8 +30,8 @@ const CryptoCurrencySelector = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.heading}>Select a Cryptocurrency</Text>
-            <View style={styles.picker}>
-                <Picker style={styles.pickerinside}
+            <View style={styles.pickerBorder}>
+                <Picker style={styles.picker}
                     selectedValue={selectedCrypto}
                     onValueChange={(itemValue) => setSelectedCrypto(itemValue)}
                 >
@@ -71,15 +71,19 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         marginBottom: 24,
     },
+    pickerBorder: {
+        borderWidth: 3,
+        borderRadius: 20,
+        overflow: 'hidden',
+    },
     picker: {
         width: 300,
-        borderWidth: 3,
-        borderRadius: 30,
         borderColor: 'black',
         backgroundColor: 'white',
         color: '#20232a',
         overflow: 'hidden',
-    },
+        fontSize: 16,
+    }
 });
 
 export default CryptoCurrencySelector;

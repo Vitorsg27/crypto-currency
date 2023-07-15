@@ -53,11 +53,6 @@ const Chart = ({ selectedCrypto }) => {
                         style: {
                             borderRadius: 16,
                         },
-                        propsForDots: {
-                            r: '6',
-                            strokeWidth: '2',
-                            stroke: '#fff',
-                        },
                     }}
                     bezier
                     style={{

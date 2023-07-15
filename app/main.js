@@ -1,15 +1,21 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
+import { Stack } from 'expo-router';
 
 import CryptoCurrency from "../components/CryptoCurrency"
 
 const CryptoCurrencySelector = () => {
-
   return (
-    <View style={styles.main}>
+    <SafeAreaView style={styles.main}>
+      <Stack.Screen
+        options={{
+          title: 'Crypto Values',
+        }}
+      />
       <CryptoCurrency />
-    </View>
+    </SafeAreaView>
   );
 };
+
 
 const styles = StyleSheet.create({
   main: {
